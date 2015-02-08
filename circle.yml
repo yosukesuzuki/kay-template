@@ -1,0 +1,18 @@
+machine:
+  python:
+    version: 2.7.3
+
+dependencies:
+  pre:
+    - python getlatestsdk.py
+    - unzip -q -d $HOME google_appengine.zip
+  override:
+    - pip install werkzeug
+    - pip install babel
+    - pip install -r requirements.txt
+
+#set environment variable PATH = $PATH:$HOME/google_appengine/
+
+test:
+  override:
+    - echo $PATH | python jdatascraper/manage.py test -v2
