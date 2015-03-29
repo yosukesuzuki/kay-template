@@ -31,6 +31,10 @@ handlers:
   script: kay.ext.testutils.gaeunit.application
   login: admin
 
+- url: /admin/.*
+  script: kay.main.application
+  login: admin
+
 - url: /.*
   script: kay.main.application
 

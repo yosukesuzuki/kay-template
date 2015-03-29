@@ -11,3 +11,9 @@ install Google Cloud SDK
 ```
 sudo ln -s /some/whare/google_appengine /usr/local/google_appengine
 ```
+
+# add application folder
+```
+$ cd project
+$ python manage.py startapp appname
+```

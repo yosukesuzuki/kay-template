@@ -20,10 +20,12 @@ DEFAULT_LANG = 'en'
 INSTALLED_APPS = (
     'core',
     'main',
+    'admin',
 )
 
 APP_MOUNT_POINTS = {
     'main': '/',
+    'admin': '/admin',
 }
 
 # You can remove following settings if unnecessary.
@@ -31,4 +33,8 @@ CONTEXT_PROCESSORS = (
     'kay.context_processors.request',
     'kay.context_processors.url_functions',
     'kay.context_processors.media_url',
+)
+
+MIDDLEWARE_CLASSES = (
+    'kay.utils.flash.FlashMiddleware',
 )
