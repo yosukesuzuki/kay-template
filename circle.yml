@@ -6,8 +6,6 @@ dependencies:
   pre:
     - python getlatestsdk.py
     - unzip -q -d $HOME google_appengine.zip
-  override:
-    - pip install -r requirements.txt
 
 #set environment variable PATH = $PATH:$HOME/google_appengine/
 
