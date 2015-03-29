@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# admin.urls
-# 
 
 from kay.generics import crud
 from kay.routing import (
@@ -9,6 +7,7 @@ from kay.routing import (
 
 from core.models import Article
 from admin.forms import ArticleForm
+
 
 class ArticleCRUDViewGroup(crud.CRUDViewGroup):
     model = Article
