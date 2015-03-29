@@ -19,3 +19,6 @@ sudo ln -s /some/whare/google_appengine /usr/local/google_appengine
 $ cd project
 $ python manage.py startapp appname
 ```
+
+# resources
+https://www.muicss.com/
