@@ -14,11 +14,13 @@ import logging
 
 sys.path = [os.path.abspath(os.path.dirname(__file__))] + sys.path
 import kay
+
 kay.setup_env(manage_py_env=True)
 from werkzeug import script
 from kay.management import *
+import appengine_config
 
 if __name__ == '__main__':
-  if len(sys.argv) == 1:
-    sys.argv.append("--help")
-  script.run()
+    if len(sys.argv) == 1:
+        sys.argv.append("--help")
+    script.run()

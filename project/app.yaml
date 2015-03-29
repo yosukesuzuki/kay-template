@@ -1,4 +1,4 @@
-application: your-application-id
+application: kay-template
 version: 1
 runtime: python27
 api_version: 1
@@ -29,6 +29,10 @@ handlers:
 
 - url: /_ah/test.*
   script: kay.ext.testutils.gaeunit.application
+  login: admin
+
+- url: /admin/.*
+  script: kay.main.application
   login: admin
 
 - url: /.*

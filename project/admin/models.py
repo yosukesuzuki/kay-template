@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# core.models
+# admin.models
 
 # from google.appengine.ext import db
 
