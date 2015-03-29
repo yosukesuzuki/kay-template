@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/yosukesuzuki/kay-template.svg?style=svg)](https://circleci.com/gh/yosukesuzuki/kay-template)
+
 # What's this?
 This is the template for Kay-framework application.
 Built-in tox
