@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    - echo $PATH | python project/manage.py test -v2
+    - echo $PATH | tox

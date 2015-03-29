@@ -1,14 +1,11 @@
 # What's this?
-this is the template for Kay-framework application.
+This is the template for Kay-framework application.
 Built-in tox
 
-# kay-template
-kayframework quick start template
 
 # Setup Google Cloud SDK
-```bash
-curl https://sdk.cloud.google.com | bash
-```
+install Google Cloud SDK
+
 
 # make symlink 
 ```
