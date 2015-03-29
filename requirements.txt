@@ -1,1 +1,3 @@
+werkzeug
+babel
 tox==1.8.1

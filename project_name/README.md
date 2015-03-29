@@ -1,2 +1,0 @@
-# jdatascraper
-Jleague data scraper
