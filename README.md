@@ -14,6 +14,11 @@ install Google Cloud SDK
 sudo ln -s /some/whare/google_appengine /usr/local/google_appengine
 ```
 
+## run tox
+```
+$ tox
+```
+
 # add application folder
 ```
 $ cd project
