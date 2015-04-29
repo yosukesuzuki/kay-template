@@ -17,5 +17,6 @@ test:
   pre:
     - $HOME/google_appengine/dev_appserver.py . True:
         background: true
+    - sleep 5
   override:
     - echo $PATH | tox;gulp test:e2e
