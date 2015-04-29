@@ -4,15 +4,13 @@ python:
   - '2.7'
 
 before_install:
-  - pushd $HOME
   - python getlatestsdk.py
-  - unzip -q -d $HOME google_appengine.zip
+  - unzip -q -d google_appengine.zip
   - npm install -g gulp gulp-protractor gulp-webserver run-sequence
   - node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
   - cd google_appengine
   - export GAE=$(pwd)
   - export PATH=$PATH:$GAE
-  - popd
   - cd -
 
 before_script:
