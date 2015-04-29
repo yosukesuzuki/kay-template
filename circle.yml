@@ -13,7 +13,7 @@ dependencies:
 
 test:
   pre:
-    - $HOME/google_appengine/dev_appserver.py .
+    - $HOME/google_appengine/dev_appserver.py . True:
       background: true
   override:
     - echo $PATH | tox
