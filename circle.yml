@@ -19,4 +19,7 @@ test:
         background: true
     - sleep 5
   override:
-    - echo $PATH | tox;gulp test:e2e
+    - echo $PATH | tox
+    - gulp test:e2e:
+      timeout: 1800
+      parallel: true
