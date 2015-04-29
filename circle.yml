@@ -1,8 +1,6 @@
 machine:
   python:
     version: 2.7.8
-  node:
-    version: 0.10.22
 
 dependencies:
   pre:
