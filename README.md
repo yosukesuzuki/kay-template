@@ -25,3 +25,9 @@ $ cd project
 $ python manage.py startapp appname
 ```
 
+# e2e
+```
+$ npm install --save-dev gulp gulp-protractor gulp-webserver run-sequence
+$ node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
+$ gulp test:e2e
+```
