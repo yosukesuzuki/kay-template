@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - '2.7'
+
+before_install:
+  - pushd $HOME
+  - python getlatestsdk.py
+  - unzip -q -d $HOME google_appengine.zip
+  - npm install -g gulp gulp-protractor gulp-webserver run-sequence
+  - node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
+  - cd google_appengine
+  - export GAE=$(pwd)
+  - export PATH=$PATH:$GAE
+  - popd
+  - cd -
+
+before_script:
+  - python $GAE/dev_appserver.py . &
+  - sleep 5
+script: 'tox;gulp test:e2e'
