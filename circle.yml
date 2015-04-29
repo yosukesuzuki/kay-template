@@ -17,4 +17,4 @@ test:
         background: true
   override:
     - echo $PATH | tox
-    - gulp test:e2e
+    - $HOME/node_modules/gulp/bin/gulp.js test:e2e
