@@ -14,7 +14,7 @@ dependencies:
 test:
   pre:
     - $HOME/google_appengine/dev_appserver.py . True:
-      background: true
+        background: true
   override:
     - echo $PATH | tox
     - gulp test:e2e
