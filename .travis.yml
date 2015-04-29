@@ -7,7 +7,7 @@ before_install:
   - python getlatestsdk.py
   - unzip -q -d ./ google_appengine.zip
   - npm install -g gulp gulp-protractor gulp-webserver run-sequence
-  - node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
+  - webdriver-manager update
   - cd google_appengine
   - export GAE=$(pwd)
   - export PATH=$PATH:$GAE
