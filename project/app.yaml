@@ -68,5 +68,6 @@ skip_files: |
   (kay\/docs\/.*)|
   (kay\/management\/.*)|
   (kay\/lib\/babel\/localedata\/.*)|
+  (node_modules\/.*)|
   )$
 
