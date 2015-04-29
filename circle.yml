@@ -8,8 +8,8 @@ dependencies:
   pre:
     - python getlatestsdk.py
     - unzip -q -d $HOME google_appengine.zip
-    - npm install --save-dev gulp gulp-protractor gulp-webserver run-sequence
-    - node node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
+    - npm install -g gulp gulp-protractor gulp-webserver run-sequence
+    - node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
 
 #set environment variable PATH = $PATH:$HOME/google_appengine/
 
@@ -18,5 +18,4 @@ test:
     - $HOME/google_appengine/dev_appserver.py . True:
         background: true
   override:
-    - echo $PATH | tox
-    - gulp test:e2e
+    - echo $PATH | tox;gulp test:e2e
