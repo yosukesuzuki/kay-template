@@ -18,4 +18,5 @@ before_install:
 before_script:
   - python $GAE/dev_appserver.py . &
   - sleep 5
+
 script: 'tox;gulp test:e2e'
