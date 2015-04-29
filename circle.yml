@@ -8,7 +8,7 @@ dependencies:
   pre:
     - python getlatestsdk.py
     - unzip -q -d $HOME google_appengine.zip
-    - npm install --dev gulp gulp-protractor gulp-webserver run-sequence
+    - npm install --save-dev gulp gulp-protractor gulp-webserver run-sequence
     - node node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update
 
 #set environment variable PATH = $PATH:$HOME/google_appengine/
