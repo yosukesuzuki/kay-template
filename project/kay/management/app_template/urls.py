@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 # %app_name%.urls
-# 
 
 from kay.routing import (
-  ViewGroup, Rule
+    ViewGroup, Rule
 )
 
 view_groups = [
-  ViewGroup(
-    Rule('/', endpoint='index', view='%app_name%.views.index'),
-  )
+    ViewGroup(
+        Rule('/', endpoint='index', view='%app_name%.views.index'),
+    )
 ]
-
